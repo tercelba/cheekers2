@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	clear: both;
+	*zoom: 1;
+}
+.board {
+	width: 600px;
+	height: 600px;
+	border: 10px solid #3E0600;
+	margin: 1% auto;
+	box-shadow: 0 0 200px rgba(0,0,0,1);
+}
+.line-odd,
+.line-even {
+	width: 12.5%;
+	height: 12.5%;
+	float: left;
+}
+.line-odd:nth-child(odd),
+.line-even:nth-child(even) {
+	background-color: #FFF7B2;
+}
+.line-odd:nth-child(even),
+.line-even:nth-child(odd) {
+	background-color: gray;
+}
+.cheeker {
+	width: 80%;	
+	height: 80%;	
+	border-radius: 50%;
+	margin: 10%;		
+}
+.black {
+	background-color: black;
+}
+.white {
+	background-color: white;
+}
